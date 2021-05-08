@@ -1,0 +1,23 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack build --mode production",
+    "deploy": "aws s3 sync ./dist s3://217026/ --acl public-read",
+    "release": "npm run build && npm run deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^4.6.0",
+    "aws-amplify": "^3.3.26",
+    "aws-sdk": "^2.884.0"
+  }
+}
