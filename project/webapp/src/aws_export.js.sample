@@ -1,0 +1,6 @@
+export const aws_config = {
+    region: "your region",
+    indentityPoolId: "your identity pool",
+    userPoolId: "your user pool id",
+    clientId: "your client app id"
+}
