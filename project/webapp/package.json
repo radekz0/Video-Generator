@@ -12,12 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.36.2",
+    "webpack": "^4.0",
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {
     "amazon-cognito-identity-js": "^4.6.0",
     "aws-amplify": "^3.3.26",
-    "aws-sdk": "^2.884.0"
+    "aws-sdk": "^2.884.0",
+    "uuid": "^8.3.2"
   }
 }
